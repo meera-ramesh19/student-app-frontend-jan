@@ -1,0 +1,58 @@
+.studentCard {
+  display: flex;
+  column-gap: 25px;
+  min-height: 160px;
+  border-bottom: 2px solid #999;
+  padding: 20px 10px;
+  background-color: white;
+ 
+  &__image {
+    width: 100px;
+    height: 100px;
+    
+    img {
+      border-radius: 50%;
+      width: inherit;
+    }
+  }
+  
+  &__profile {
+    width: 80%;
+  }
+  
+  &__name {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  
+  &__info > * {
+    color: #999;
+    margin-left: 10px;
+    font-size: .9em;
+    padding-bottom: 4px;
+  }
+
+  &__grades {
+    margin-top: 8px;
+  }
+
+  &__grade {
+    display: flex;
+    width: 90px; 
+    justify-content: space-between;
+  }
+
+
+  &__toggleGrades {
+      color: #999;
+      font-size:44px;
+      font-weight: 600;
+
+      &:hover {
+          color: black;
+      }
+  }
+}
